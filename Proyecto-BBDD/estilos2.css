@@ -1,0 +1,69 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(
+        45deg,
+        #bf5eec,  /* Morado muy claro */
+        #ecdc4d,  /* Amarillo muy claro */
+        #bf7bec,
+        #dbc924
+    );
+    background-size: 300% 300%;
+    animation: movimientoSuave 10s ease infinite;
+    margin: 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+@keyframes movimientoSuave {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    color: purple;
+    margin-bottom: 20px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border: 2px solid purple;
+    width: 400px;
+}
+
+label {
+    color: black;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+}
+
+button {
+    background: palevioletred;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background: plum;
+}
+
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: purple;
+}
+
+a:hover {
+    text-decoration: underline;
+}
