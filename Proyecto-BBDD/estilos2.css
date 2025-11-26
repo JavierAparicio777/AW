@@ -2,13 +2,13 @@ body {
     font-family: Arial;
     background: linear-gradient(
         45deg,
-        #bf5eec,  /* Morado muy claro */
-        #ecdc4d,  /* Amarillo muy claro */
-        #bf7bec,
-        #dbc924
+        #bf7becb6,
+        #dbc9249c,
+        #bf7becb6,
+        #dbc9249c
     );
     background-size: 300% 300%;
-    animation: movimientoSuave 10s ease infinite;
+    animation: movimientoSuave 8s ease infinite;
     margin: 20px;
     text-align: center;
     min-height: 100vh;

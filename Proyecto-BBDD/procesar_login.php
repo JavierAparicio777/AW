@@ -18,10 +18,12 @@ exit;
 } else {
 echo "<h1>Contraseña incorrecta ❌</h1>";
 echo "<p><a href='login.php'>Volver a intentar</a></p>";
+echo '<link rel="stylesheet" href="estilos.css">';
 }
 } else {
 echo "<h1>Usuario no encontrado ❌</h1>";
 echo "<p><a href='registro.php'>Registrarse</a></p>";
+echo '<link rel="stylesheet" href="estilos.css">';
 }
 $stmt->close();
 $conn->close();
