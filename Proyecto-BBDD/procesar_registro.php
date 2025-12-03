@@ -7,10 +7,8 @@ include "conexion.php";
 $usuario = $_POST['usuario'];
 $password = $_POST['password'];
 
-// Encriptar contraseña
 $hash = password_hash($password, PASSWORD_DEFAULT);
 
-// Preparar consulta segura
 $stmt = $conn->prepare("INSERT INTO usuarios (usuario, password) VALUES (?, ?)");
 $stmt->bind_param("ss", $usuario, $hash);
 ?>
