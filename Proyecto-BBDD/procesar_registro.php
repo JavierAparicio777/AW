@@ -7,6 +7,39 @@ include "conexion.php";
 $usuario = $_POST['usuario'];
 $password = $_POST['password'];
 
+// --- AQUÍ AÑADES EL NUEVO CÓDIGO ---
+// 1. Verificar si usuario ya existe
+$check_sql = "SELECT usuario FROM usuarios WHERE usuario = ?";
+$check_stmt = $conn->prepare($check_sql);
+$check_stmt->bind_param("s", $usuario);
+$check_stmt->execute();
+$check_stmt->store_result();
+
+// 2. Si existe, mostrar error y terminar
+if ($check_stmt->num_rows > 0) {
+    ?>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Error - Usuario Existente</title>
+        <link rel="stylesheet" href="estilos2.css">
+    </head>
+    <body>
+        <h1>Error: el usuario ya existe</h1>
+        <p><a href='registro.php'>Volver al registro</a></p>
+    </body>
+    </html>
+    <?php
+    $check_stmt->close();
+    $conn->close();
+    exit();
+}
+
+$check_stmt->close();
+// --- FIN DEL NUEVO CÓDIGO ---
+
 $hash = password_hash($password, PASSWORD_DEFAULT);
 
 $stmt = $conn->prepare("INSERT INTO usuarios (usuario, password) VALUES (?, ?)");
