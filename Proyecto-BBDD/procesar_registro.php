@@ -7,15 +7,12 @@ include "conexion.php";
 $usuario = $_POST['usuario'];
 $password = $_POST['password'];
 
-// --- AQUÍ AÑADES EL NUEVO CÓDIGO ---
-// 1. Verificar si usuario ya existe
 $check_sql = "SELECT usuario FROM usuarios WHERE usuario = ?";
 $check_stmt = $conn->prepare($check_sql);
 $check_stmt->bind_param("s", $usuario);
 $check_stmt->execute();
 $check_stmt->store_result();
 
-// 2. Si existe, mostrar error y terminar
 if ($check_stmt->num_rows > 0) {
     ?>
     <!DOCTYPE html>
