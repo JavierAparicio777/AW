@@ -3,7 +3,6 @@ session_start();
 include "conexion.php";
 $usuario = $_POST['usuario'];
 $password = $_POST['password'];
-
 $stmt = $conn->prepare("SELECT id, password FROM usuarios WHERE usuario = ?");
 $stmt->bind_param("s", $usuario);
 $stmt->execute();
