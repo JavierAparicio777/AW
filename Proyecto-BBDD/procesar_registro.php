@@ -35,7 +35,6 @@ if ($check_stmt->num_rows > 0) {
 }
 
 $check_stmt->close();
-// --- FIN DEL NUEVO CÓDIGO ---
 
 $hash = password_hash($password, PASSWORD_DEFAULT);
 
