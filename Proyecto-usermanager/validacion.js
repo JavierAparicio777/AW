@@ -1,8 +1,7 @@
-// validacion.js
-// Validación simple de formularios de usuario
+
 document.addEventListener("DOMContentLoaded", function() {
  const form = document.querySelector("form");
- if (!form) return; // No hay formulario en esta página
+ if (!form) return; 
  form.addEventListener("submit", function(event) {
  const nombre = form.nombre.value.trim();
  const email = form.email.value.trim();
@@ -23,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
  errores.push("Selecciona un rol válido.");
  }
  if (errores.length > 0) {
- event.preventDefault(); // Evita que se envíe el formulario
+ event.preventDefault(); 
  alert(errores.join("\n"));
  }
  });
