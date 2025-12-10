@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Login</title>
 <link rel="stylesheet" href="estilos2.css">
+<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlpMtvA4EP-crnVDl_gZTN3Gvvtp-n6lknKA&s">
 <style>
     body {
         display: flex;
