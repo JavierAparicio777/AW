@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+require_once __DIR__ . "/db.php";
 $id = $_GET["id"];
 $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE id=?");
 $stmt->execute([$id]);
@@ -40,4 +40,3 @@ id=?");
 <script src="js/validacion.js"></script>
 </body>
 </html>
-8. Eli

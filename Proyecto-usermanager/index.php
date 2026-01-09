@@ -1,4 +1,4 @@
-<?php include "db.php"; ?>
+<?php require_once __DIR__ . "/db.php";; ?>
 <!DOCTYPE html>
 <html>
 <head>
