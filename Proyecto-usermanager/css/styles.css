@@ -4,7 +4,7 @@ body {
     margin: 40px;
     color: #5d4037;
 }
-.contenedor {
+.container, .form-container {
     max-width: 1000px;
     margin: auto;
     background: #fffbf0;
@@ -12,6 +12,10 @@ body {
     border: 3px solid #8d6e63;
     box-shadow: 5px 5px 0 #bcaaa4;
 }
+
+.form-container {
+}
+
 h1 {
     color: #6d4c41;
     text-align: center;
@@ -19,8 +23,10 @@ h1 {
     padding-bottom: 15px;
     margin-bottom: 30px;
 }
+
 table {
     width: 100%;
+    border-collapse: collapse; 
     border: 2px solid #8d6e63;
     margin: 25px 0;
     background: white;
@@ -33,14 +39,9 @@ th {
 td {
     padding: 10px;
     border-top: 1px solid #d7ccc8;
+    text-align: center;
 }
-.form-box {
-    padding: 25px;
-    border: 2px solid #8d6e63;
-    background: #fffbf0;
-    margin: 30px auto;
-    width: 500px;
-}
+
 input, select {
     width: 100%;
     padding: 10px;
@@ -48,8 +49,9 @@ input, select {
     border: 1px solid #bcaaa4;
     background: #fff;
     font-family: Georgia;
+    box-sizing: border-box; 
 }
-.boton {
+.btn, .boton, .btn-edit, .btn-delete {
     background: #8d6e63;
     color: white;
     padding: 10px 20px;
@@ -57,7 +59,12 @@ input, select {
     margin: 8px;
     cursor: pointer;
     font-family: Georgia;
+    text-decoration: none;
+    display: inline-block;
 }
-.boton:hover {
+.btn:hover, .boton:hover, .btn-edit:hover {
     background: #6d4c41;
+}
+.btn-delete {
+    background: #a66d5b;
 }
