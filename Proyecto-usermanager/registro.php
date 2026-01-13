@@ -12,10 +12,7 @@
             <input type="email" name="email" placeholder="Email" required>
             <input type="number" name="edad" placeholder="Edad" required>
             <input type="password" name="password" placeholder="Contraseña" required>
-            <select name="rol">
-                <option value="user">Usuario normal</option>
-                <option value="admin">Administrador</option>
-            </select>
+            
             <button class="boton" type="submit">Registrarse</button>
         </form>
         <p style="text-align:center"><a href="login.php">Ir al Login</a></p>
