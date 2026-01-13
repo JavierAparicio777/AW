@@ -8,7 +8,7 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
  <meta charset="UTF-8">
  <title>Listado de Usuarios</title>
- <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="container">
