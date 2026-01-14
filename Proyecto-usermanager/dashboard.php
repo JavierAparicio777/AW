@@ -11,7 +11,9 @@ if (!isset($_SESSION['usuario_id'])) {
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlpMtvA4EP-crnVDl_gZTN3Gvvtp-n6lknKA&s">
+    <meta charset="UTF-8">
 </head>
 <body>
     <div class="form-container">
@@ -23,7 +25,7 @@ if (!isset($_SESSION['usuario_id'])) {
         <?php if ($_SESSION['rol'] == 'admin'): ?>
             <a href="listado.php" class="boton">GESTIÓN DE USUARIOS</a>
         <?php else: ?>
-            <p>Bienvenido a tu panel de usuario estándar.</p>
+            <p>Bienvenido a tu panel de usuario.</p>
         <?php endif; ?>
         
         <br><br>
