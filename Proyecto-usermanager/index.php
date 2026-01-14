@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>UserManager - Inicio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlpMtvA4EP-crnVDl_gZTN3Gvvtp-n6lknKA&s">
+    <meta charset="UTF-8">
 </head>
 <body>
     <div class="container">
