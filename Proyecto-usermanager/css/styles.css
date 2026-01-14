@@ -1,4 +1,4 @@
-body {
+ody {
     background: #f4e9d8;
     font-family: Georgia, serif;
     margin: 40px;
@@ -12,10 +12,8 @@ body {
     border: 3px solid #8d6e63;
     box-shadow: 5px 5px 0 #bcaaa4;
 }
-
 .form-container {
 }
-
 h1 {
     color: #6d4c41;
     text-align: center;
@@ -23,7 +21,6 @@ h1 {
     padding-bottom: 15px;
     margin-bottom: 30px;
 }
-
 table {
     width: 100%;
     border-collapse: collapse; 
@@ -41,7 +38,6 @@ td {
     border-top: 1px solid #d7ccc8;
     text-align: center;
 }
-
 input, select {
     width: 100%;
     padding: 10px;
